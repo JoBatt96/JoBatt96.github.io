@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'AI systems - Computer vision engineer'
+landing-title: 'AI systems <br> Computer vision engineer'
 description: null
 image: null
 author: null
