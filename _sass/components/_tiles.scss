@@ -5,7 +5,21 @@
 ///
 
 /* Tiles */
-
+	.tiles article:hover{
+		transition: 0.25s;
+		//border-color: _palette(highlight) !important;
+		color: _palette(highlight) !important;
+		a.link:not(.primary){
+			transition: 0.25s;
+		 	background-color: _palette(highlight_light) !important;
+			border-radius: 15px;
+			color: white
+		}
+		a.primary{
+			transition: 0.25s;
+			border: 8px solid _palette(highlight);
+		}
+	}
 	.tiles {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
@@ -32,9 +46,11 @@
 			height: 40vh;
 			max-height: 40em;
 			min-height: 23em;
+			//border: 8px solid white;
 			overflow: hidden;
 			position: relative;
 			width: 40%;
+			text-transform: uppercase;
 
 			.image {
 				display: none;
@@ -47,11 +63,14 @@
 
 			h3 {
 				font-size: 1.75em;
-
 				a {
+					padding: 10px;
 					&:hover {
 						color: inherit !important;
 					}
+				}
+				p{
+					padding: 10px;
 				}
 			}
 
@@ -72,7 +91,7 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.8;
+				opacity: 0.5;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
